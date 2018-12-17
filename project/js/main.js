@@ -28,3 +28,27 @@ $(window).on('load', function() {
 	});
 })(jQuery);
 
+
+
+'use strict';
+
+
+$(window).on('load', function() {
+	/*------------------
+		Preloder
+	--------------------*/
+	$(".loader").fadeOut(); 
+	$("#preloder").delay(400).fadeOut("slow");
+
+});
+
+(function($) {
+	/*------------------
+		Navigation
+	--------------------*/
+	$('.nav-switch').on('click', function(event) {
+		$('.main-menu').slideToggle(400);
+		event.preventDefault();
+	});
+})(jQuery);
+
